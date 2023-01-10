@@ -41,12 +41,12 @@ const QuoteBox = () => {
       <div style={{ "background-color": color }} className="App">
         <div id="quote-box" className="quote-box">
           <div className="div-quote-text">
-            <p id="text" style={{ color: color }} className="quote-text" id="text">
+            <p id="text" style={{ color: color }} className="quote-text" >
               <FaQuoteLeft style={{ display: "inline" }} />{" "}
               {quote ? quote : "Carpe diem"}
             </p>
 
-            <p id="author" style={{ color: color }} className="quote-author" id="author">
+            <p id="author" style={{ color: color }} className="quote-author">
               {author ? author : "Anonymous"}{" "}
             </p>
           </div>
