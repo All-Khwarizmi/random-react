@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  
+}
+:root{
+  min-height: 100vh;
+}
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  
+}
+
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid lightgrey;
+  width: 98%;
+  max-height: 100vh;
+  background-color: whitesmoke;
+  font-size: 2rem;
+  border-radius: 10px;
+  
+}
+
+
+
+.div-quote-text {
+  width: 80%;
+  font-weight:bold;
+  text-justify:distribute;
+  margin-top: 2rem;
+}
+
+.quote-author {
+  width: 95%;
+text-align: right;
+font-style: italic;
+font-weight: bold;
+font-size: 1rem;
+margin-bottom: 2rem;
+
+}
+
+.div-quote-link {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  justify-items: space-between;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+
+.quote-button {
+  border-radius: 10px;
+  border: whitesmoke solid 0;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  vertical-align: middle;
+}
+.global-class-name 
+{
+  vertical-align: middle;
+  font-size: 2.5rem;
+  border: solid 0 whitesmoke;
+}
+
+@media screen and (min-width: 768px) {
+  .quote-box {
+    
+    max-width: 40%;
+  
+  }
+    .App {
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Roboto;
+  
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
